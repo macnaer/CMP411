@@ -45,7 +45,7 @@ pipeline {
                     docker pull macnaer/site
 
                     echo "🚀 Starting new Nagios container..."
-                    docker run -d --name site --restart=always -p 0.0.0.0:80  macnaer/site
+                    docker run -d --name site --restart=always -p 80:80  macnaer/site
                 '''
             } 
         }
